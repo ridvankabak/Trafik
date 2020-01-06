@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:background="@color/turuncu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru1Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Aşağıdakilerden hangisi ilk yardımın öncelikli amaçlarındandır?"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/ButtonA1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1yanlis"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru1Text" />
+
+                <Button
+                    android:id="@+id/ButtonB1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1yanlis"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA1" />
+
+                <Button
+                    android:id="@+id/ButtonC1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1yanlis"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB1" />
+
+                <Button
+                    android:id="@+id/ButtonD1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1dogru"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC1" />
+
+                <TextView
+                    android:id="@+id/soru1yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Trafikteki kaza sayısını azaltmak"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA1"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA1" />
+
+                <TextView
+                    android:id="@+id/soru1yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Sağlık personelinin mesleki başarısını
+                    artırmak"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB1"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA1" />
+
+                <TextView
+                    android:id="@+id/soru1yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="İnsanları zararlı alışkanlıklarından
+                    uzaklaştırmak"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC1"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB1" />
+
+                <TextView
+                    android:id="@+id/soru1dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Yaşamsal fonksiyonların sürdürülmesini
+                    sağlamak"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD1"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC1" />
+
+                <TextView
+                    android:id="@+id/yanlis1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru1dogru" />
+
+                <TextView
+                    android:id="@+id/dogru1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru1dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru2Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Aşağıdakilerden hangisi organların çalış
+                    masını, bilinç, algılama, anlama, hare- ketlerin birbiri ile uyum ve denge içinde olmasını sağlayan vb. işlevleri kontrol eden sistemi oluşturan yapılardandır?"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/ButtonA2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2dogru"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru2Text" />
+
+                <Button
+                    android:id="@+id/ButtonB2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2yanlis"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA2" />
+
+                <Button
+                    android:id="@+id/ButtonC2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2yanlis"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB2" />
+
+                <Button
+                    android:id="@+id/ButtonD2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2yanlis"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC2" />
+
+                <TextView
+                    android:id="@+id/soru2yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Omurilik"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA2"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA2" />
+
+                <TextView
+                    android:id="@+id/soru2yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Pankreas"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB2"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA2" />
+
+                <TextView
+                    android:id="@+id/soru2yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Böbrekler"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC2"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB2" />
+
+                <TextView
+                    android:id="@+id/soru2dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Akciğerler"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD2"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC2" />
+
+                <TextView
+                    android:id="@+id/yanlis2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru2dogru" />
+
+                <TextView
+                    android:id="@+id/dogru2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru2dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru3Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Kazazedenin dolaşımı değerlendirilirken;
+                    I. Bebeklerde kol atardamarından,
+                    II. Çocuk ve yetişkinlerde şah damarından nabız alınır.\n Verilenler için aşağıdakilerden hangisi söylenebilir?"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/ButtonA3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3yanlis"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru3Text" />
+
+                <Button
+                    android:id="@+id/ButtonB3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3yanlis"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA3" />
+
+                <Button
+                    android:id="@+id/ButtonC3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3dogru"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB3" />
+
+                <Button
+                    android:id="@+id/ButtonD3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3yanlis"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC3" />
+
+                <TextView
+                    android:id="@+id/soru3yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="I. doğru, II. yanlış"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA3"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA3" />
+
+                <TextView
+                    android:id="@+id/soru3yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="I. yanlış, II. doğru"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB3"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA3" />
+
+                <TextView
+                    android:id="@+id/soru3yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Her ikisi de doğru"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC3"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB3" />
+
+                <TextView
+                    android:id="@+id/soru3dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Her ikisi de yanlış"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD3"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC3" />
+
+                <TextView
+                    android:id="@+id/yanlis3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru3dogru" />
+
+                <TextView
+                    android:id="@+id/dogru3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru3dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru4Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Aşağıdakilerden hangisi solunum dur- masının belirtilerinden biri değildir?"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/ButtonA4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4yanlis"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru4Text" />
+
+                <Button
+                    android:id="@+id/ButtonB4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4dogru"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA4" />
+
+                <Button
+                    android:id="@+id/ButtonC4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4yanlis"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB4" />
+
+                <Button
+                    android:id="@+id/ButtonD4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4yanlis"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC4" />
+
+                <TextView
+                    android:id="@+id/soru4yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Dudakların morarması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA4"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA4" />
+
+                <TextView
+                    android:id="@+id/soru4yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Göz bebeklerinin küçülmesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB4"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA4" />
+
+                <TextView
+                    android:id="@+id/soru4yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Göğüs hareketlerinin kaybolması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC4"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB4" />
+
+                <TextView
+                    android:id="@+id/soru4dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Nefes alma ve verme sesinin duyulama-
+                    ması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD4"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC4" />
+
+                <TextView
+                    android:id="@+id/yanlis4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru4dogru" />
+
+                <TextView
+                    android:id="@+id/dogru4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru4dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru5Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Aşağıdakilerden hangisi burkulma belir-tilerinden biri değildir?"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/ButtonA5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5yanlis"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru5Text" />
+
+                <Button
+                    android:id="@+id/ButtonB5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5yanlis"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA5" />
+
+                <Button
+                    android:id="@+id/ButtonC5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5yanlis"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB5" />
+
+                <Button
+                    android:id="@+id/ButtonD5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5dogru"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC5" />
+
+                <TextView
+                    android:id="@+id/soru5yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Şişlik"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA5"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA5" />
+
+                <TextView
+                    android:id="@+id/soru5yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Kızarma"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB5"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA5" />
+
+                <TextView
+                    android:id="@+id/soru5yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="İşlev kaybı"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC5"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB5" />
+
+                <TextView
+                    android:id="@+id/soru5dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Hareket ile azalan ağrı"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD5"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC5" />
+
+                <TextView
+                    android:id="@+id/yanlis5Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru5dogru" />
+
+                <TextView
+                    android:id="@+id/dogru5Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru5dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru6Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Baş ve omurga yaralanması olmayan, bilinci kapalı kazazedenin hava yolunu açmak için kazazedeye aşağıdaki baş pozisyonlarından hangisi verilir?"
+                    android:textColor="#0F0909"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/ButtonA6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6yanlis"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru6Text" />
+
+                <Button
+                    android:id="@+id/ButtonB6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6yanlis"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="@+id/ButtonD6"
+                    app:layout_constraintTop_toBottomOf="@+id/soru6Text" />
+
+                <Button
+                    android:id="@+id/ButtonD6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="152dp"
+                    android:layout_marginLeft="152dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6yanlis"
+                    android:text="D)"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonC6" />
+
+                <Button
+                    android:id="@+id/ButtonC6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6dogru"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="@+id/ButtonA6"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA6" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="95dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ButtonA6"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA6"
+                    app:srcCompat="@drawable/a" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="95dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ButtonB6"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonB6"
+                    app:srcCompat="@drawable/b" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="95dp"
+                    android:layout_height="86dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ButtonC6"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonC6"
+                    app:srcCompat="@drawable/c" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="95dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ButtonD6"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonD6"
+                    app:srcCompat="@drawable/d" />
+
+                <TextView
+                    android:id="@+id/yanlis6Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#EE0D0D"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+                <TextView
+                    android:id="@+id/dogru6Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#104204"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

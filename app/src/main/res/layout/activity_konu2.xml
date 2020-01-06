@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turuncu"
+    tools:context=".Ders1.Konular.Konu2Activity">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutK2"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewNextK2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="177dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewhome2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutK2"
+        app:srcCompat="@drawable/icon_next" />
+
+    <ImageView
+        android:id="@+id/imageViewBackK2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewhome2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutK2"
+        app:srcCompat="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/imageViewhome2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNextK2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBackK2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutK2"
+        app:srcCompat="@drawable/home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

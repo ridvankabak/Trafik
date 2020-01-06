@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="turkuaz">#A7EDF2</color>
+    <color name="turuncu">#F6B865</color>
+    <color name="beyazimsi">#C4CED1</color>
+
+    <array name="gradient_colors">
+        <item name="progress_start">#53F1FF</item>
+        <item name="progress_center">#5686CC</item>
+        <item name="progress_end">#4400FF</item>
+    </array>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turuncu"
+    tools:context=".Ders1.Konular.KonuActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentTutucu"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewNext"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="189dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewhome"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTutucu"
+        app:srcCompat="@drawable/icon_next" />
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewhome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTutucu"
+        app:srcCompat="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/imageViewhome"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNext"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBack"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTutucu"
+        app:srcCompat="@drawable/home" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test2Activity"
+    android:background="@color/turuncu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru1Text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Yolda seyir hâlinde olan bir sürücüde trafik işaretlerini fark edememe, şerit takibinde zorlanma ve takip mesafesini ayarlayama- ma gibi davranışlar gözleniyor."
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Aşağıdakilerden hangisi sürücüde bu davranışların görülmesinin nedenlerin- dendir?"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru1Text2" />
+
+                <Button
+                    android:id="@+id/ButtonA1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1yanlis2"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <Button
+                    android:id="@+id/ButtonB1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1dogru2"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA1" />
+
+                <Button
+                    android:id="@+id/ButtonC1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1yanlis2"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB1" />
+
+                <Button
+                    android:id="@+id/ButtonD1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru1yanlis2"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC1" />
+
+                <TextView
+                    android:id="@+id/soru1yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Kuralları bilmemesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA1"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA1" />
+
+                <TextView
+                    android:id="@+id/soru1yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Uykusuz ve yorgun olması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB1"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA1" />
+
+                <TextView
+                    android:id="@+id/soru1yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Araçta teknik sorun yaşanması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC1"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB1" />
+
+                <TextView
+                    android:id="@+id/soru1dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Araç kullanma sürelerine uyması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD1"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC1" />
+
+                <TextView
+                    android:id="@+id/yanlis1Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru1dogru" />
+
+                <TextView
+                    android:id="@+id/dogru1Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru1dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru2Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Kavşağa yaklaşan bir sürücü, trafik işaret ışığının aralıklarla kırmızı yanıp söndüğünü fark etmiştir."
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Aşağıdakilerden hangisi sürücüde bu davranışların görülmesinin nedenlerin- dendir?"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru2Text" />
+
+                <Button
+                    android:id="@+id/ButtonA2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2yanlis2"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <Button
+                    android:id="@+id/ButtonB2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2yanlis2"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA2" />
+
+                <Button
+                    android:id="@+id/ButtonC2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2yanlis2"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB2" />
+
+                <Button
+                    android:id="@+id/ButtonD2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru2dogru2"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC2" />
+
+                <TextView
+                    android:id="@+id/soru2yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Durmalı, ilk geçiş hakkını kendisi kullanmalı"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA2"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA2" />
+
+                <TextView
+                    android:id="@+id/soru2yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="6dp"
+                    android:text="Hızını sabit tutmalı, kontrollü bir şekilde
+                    geçmeli"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB2"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA2" />
+
+                <TextView
+                    android:id="@+id/soru2yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Durmalı, ilk geçiş hakkını diğer yönden
+gelen araçlara vermeli"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC2"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB2" />
+
+                <TextView
+                    android:id="@+id/soru2dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Hızını azaltmalı, kontrollü bir şekilde
+                    durmadan geçmeli"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD2"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC2" />
+
+                <TextView
+                    android:id="@+id/yanlis2Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru2dogru" />
+
+                <TextView
+                    android:id="@+id/dogru2Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru2dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="338dp"
+                    android:layout_height="239dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/soru1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/soru3Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Verilen şekle göre 2 numaralı aracın han- gisini yapması doğrudur?"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+                <Button
+                    android:id="@+id/ButtonA3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3yanlis2"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru3Text" />
+
+                <Button
+                    android:id="@+id/ButtonB3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3yanlis2"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA3" />
+
+                <Button
+                    android:id="@+id/ButtonC3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3dogru2"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB3" />
+
+                <Button
+                    android:id="@+id/ButtonD3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru3yanlis2"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC3" />
+
+                <TextView
+                    android:id="@+id/soru3yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Bisiklet yolunu kullanması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA3"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA3" />
+
+                <TextView
+                    android:id="@+id/soru3yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Yayaları ikaz ederek bekletmesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB3"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA3" />
+
+                <TextView
+                    android:id="@+id/soru3yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Sol şeride geçip yoluna devam etmesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC3"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB3" />
+
+                <TextView
+                    android:id="@+id/soru3dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Bu bölgede azami 30 kilometre/saat hızla gitmesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD3"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC3" />
+
+                <TextView
+                    android:id="@+id/yanlis3Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru3dogru" />
+
+                <TextView
+                    android:id="@+id/dogru3Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru3dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru4Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Sürücünün aşağıdakilerden hangisini yapması kural ihlali sayılır?"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/ButtonA4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4yanlis2"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru4Text" />
+
+                <Button
+                    android:id="@+id/ButtonB4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4yanlis2"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA4" />
+
+                <Button
+                    android:id="@+id/ButtonC4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4dogru2"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB4" />
+
+                <Button
+                    android:id="@+id/ButtonD4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru4yanlis2"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC4" />
+
+                <TextView
+                    android:id="@+id/soru4yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Üç şeritli ve iki yönlü yollarda sağ şerit-
+                    ten gitmesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA4"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA4" />
+
+                <TextView
+                    android:id="@+id/soru4yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:paddingLeft="6dp"
+                    android:text="Aracın cinsine ve hızına uygun olan şeridi kullanması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB4"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA4" />
+
+                <TextView
+                    android:id="@+id/soru4yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Geçme, dönme gibi mecburi hâller dışın-
+                    da şerit değiştirmesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC4"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB4" />
+
+                <TextView
+                    android:id="@+id/soru4dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Şerit değiştirmeden önce, gireceği şeritte
+                    sürülen araçların güvenle geçişlerini beklemesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD4"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC4" />
+
+                <TextView
+                    android:id="@+id/yanlis4Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru4dogru" />
+
+                <TextView
+                    android:id="@+id/dogru4Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru4dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/soru5Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Arkadan çarpma şeklindeki trafik kaza-
+                    larının en önemli sebebi aşağıdakilerden hangisidir?"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <Button
+                    android:id="@+id/ButtonA5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5yanlis2"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru5Text" />
+
+                <Button
+                    android:id="@+id/ButtonB5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5yanlis2"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA5" />
+
+                <Button
+                    android:id="@+id/ButtonC5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5yanlis2"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB5" />
+
+                <Button
+                    android:id="@+id/ButtonD5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru5dogru2"
+                    android:text="D)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC5" />
+
+                <TextView
+                    android:id="@+id/soru5yanlis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="6dp"
+                    android:text="Havanın yağışlı olması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA5"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA5" />
+
+                <TextView
+                    android:id="@+id/soru5yanlis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Öndeki aracın durması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB5"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA5" />
+
+                <TextView
+                    android:id="@+id/soru5yanlis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Görüş mesafesinin kötü olması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC5"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonB5" />
+
+                <TextView
+                    android:id="@+id/soru5dogru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="6dp"
+                    android:text="Takip mesafesi kuralına uyulmaması"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD5"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC5" />
+
+                <TextView
+                    android:id="@+id/yanlis5Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru5dogru" />
+
+                <TextView
+                    android:id="@+id/dogru5Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#165304"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru5dogru" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="338dp"
+                    android:layout_height="239dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/soru2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/soru6Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Şekildeki “park etme bilgi işaretine” göre hangi numaralı araçlar yanlış park etmiştir?"
+                    android:textColor="#0F0909"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+                <Button
+                    android:id="@+id/ButtonA6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6dogru2"
+                    android:text="A)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/soru6Text" />
+
+                <Button
+                    android:id="@+id/ButtonB6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6yanlis2"
+                    android:text="B)"
+                    app:layout_constraintStart_toStartOf="@+id/ButtonD6"
+                    app:layout_constraintTop_toBottomOf="@+id/soru6Text" />
+
+                <Button
+                    android:id="@+id/ButtonC6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6yanlis2"
+                    android:text="C)"
+                    app:layout_constraintStart_toStartOf="@+id/ButtonA6"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonA6" />
+
+                <Button
+                    android:id="@+id/ButtonD6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="156dp"
+                    android:background="@drawable/yuvarlakbutton"
+                    android:onClick="soru6yanlis2"
+                    android:text="D)"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonC6" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Yalnız 3"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonA6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonA6" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="1 ve 2"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonB6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonB6" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="1 ve 3"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonC6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonC6" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:text="2 ve 3"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toEndOf="@+id/ButtonD6"
+                    app:layout_constraintTop_toTopOf="@+id/ButtonD6" />
+
+                <TextView
+                    android:id="@+id/yanlis6Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#EE0D0D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC6" />
+
+                <TextView
+                    android:id="@+id/dogru6Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#104204"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonC6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

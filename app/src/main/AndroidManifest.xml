@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trafik">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Test2Activity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".Ders2.Konular.Konu5.D2K5BirinciFragment" />
+        <activity android:name=".Ders2.Konular.Konu5D2Activity" />
+        <activity android:name=".Ders2.Konular.Konu4.D2K4BirinciFragment" />
+        <activity android:name=".Ders2.Konular.Konu4D2Activity" />
+        <activity android:name=".Ders2.Konular.Konu3.D2K3BirinciFragment" />
+        <activity android:name=".Ders2.Konular.KonuD2Activity" />
+        <activity android:name=".Ders2.Konular.Konu3D2Activity" />
+        <activity android:name=".Ders2.Konular.Konu2D2Activity" />
+        <activity android:name=".Ders1.Konular.Konu4Activity" />
+        <activity android:name=".Ders1.Konular.Konu3Activity" />
+        <activity android:name=".Ders1.Konular.Konu2Activity" />
+        <activity android:name=".Ders1.Konular.KonuActivity" />
+        <activity android:name=".Ders2.Ders2Activity" />
+        <activity android:name=".Ders1.Ders1Activity" />
+        <activity android:name=".DerslerActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
